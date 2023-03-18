@@ -1,3 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+
+/* font-family: 'Outfit', sans-serif;*/
+
 * {
     margin: 0;
     padding: 0;
@@ -8,9 +12,9 @@
 :root {
     --Soft-blue: hsl(215, 51%, 70%);
     --Cyan: hsl(178, 100%, 50%);
-    --Very-dark-blue1 : hsl(217, 54%, 11%);
-    --Very-dark-blue2 : hsl(216, 50%, 16%);
-    --Very-dark-blue3 : hsl(215, 32%, 27%);
+    --Very-dark-blue1: hsl(217, 54%, 11%);
+    --Very-dark-blue2: hsl(216, 50%, 16%);
+    --Very-dark-blue3: hsl(215, 32%, 27%);
     --White: hsl(0, 0%, 100%);
 }
 
@@ -21,7 +25,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--Very-dark-blue2);
+    background-color: var(--Very-dark-blue1);
 }
 
 .card-containe {
@@ -32,7 +36,92 @@ body {
     border: 1px solid;
     padding-top: 25px;
     width: 350px;
-    background-color: var(--Very-dark-blue3);
+    background-color: var(--Very-dark-blue2);
     border-radius: 15px;
 
+
+
+}
+.card-image img{
+    width: 300px;
+    cursor: pointer;
+    z-index: 2;
+}
+.card-image:hover{
+    z-index: 1;
+    width: 300px;
+    background-color: aqua;
+}
+
+.card-text {
+    margin: 25px;
+    color: var(--White);
+    font-family: 'Outfit', sans-serif;
+
+
+
+}
+.card-text h1{
+    margin-bottom: 20px;
+    font-size: 22px;
+    cursor: pointer;
+}
+.card-text p{
+    font-size: 18px;
+    color: var(--Soft-blue);
+
+}
+
+.card-dados {
+    width: 300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid var(--Very-dark-blue3);
+    padding-bottom: 20px;
+    margin-bottom: 20px
+}
+.ethereum{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: 300;
+    color: var(--Cyan);
+    cursor: pointer;
+}
+.ethereum img{
+    margin-right: 8px;
+}
+.clock{
+    color: var(--Soft-blue);
+    font-size: 20px;
+}
+
+.card-usuario {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+
+.card-usuario img {
+    width: 40px;
+    border: 1px solid var(--White);
+    border-radius: 50px;
+    margin-bottom: 10px;
+    margin-right: 20px;
+}
+
+.card-usuario p {
+    color: var(--Soft-blue);
+
+}
+
+.card-usuario samp {
+    color: var(--White);
 }
